@@ -1,5 +1,5 @@
 import urllib.parse
-def is_s3(path):
+def get_path_type(path):
     info=urllib.parse.urlsplit(path)
     if info.scheme:
         return info.scheme
@@ -8,5 +8,5 @@ def is_s3(path):
 
 if __name__ == '__main__':
     path='http://zhidao.baidu.com/question/1495707102172314019.html'
-    result=is_s3(path)
+    result=get_path_type(path)
     print(result)

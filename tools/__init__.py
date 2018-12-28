@@ -1,0 +1,1 @@
+from .check_path import get_path_type
